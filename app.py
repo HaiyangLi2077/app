@@ -62,15 +62,9 @@ except ImportError:
 
 # 加载 FieldID 数据
 st.header("📋 FieldID 数据表")
-try:
-    !gdown 1eUYPHXuMdq5185fNwcQ_VSqYt4opGJqS
-except ImportError:
-    st.warning("正在安装 gdown...")
-    st.spinner("安装中...")
-    !pip install gdown
-    !gdown 1eUYPHXuMdq5185fNwcQ_VSqYt4opGJqS
 
-mapping_df = pd.read_csv("FieldID.csv")
+
+mapping_df = pd.read_csv("/mount/src/app/FieldID.csv")
 st.write(mapping_df)
 
 # 上传 UKB 原始数据
