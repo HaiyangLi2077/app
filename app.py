@@ -57,7 +57,7 @@ try:
 except ImportError:
     st.warning("正在安装 pandas...")
     st.spinner("安装中...")
-    !pip install pandas -q
+  
     import pandas as pd
 
 # 加载 FieldID 数据
