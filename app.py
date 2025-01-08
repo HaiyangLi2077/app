@@ -48,7 +48,7 @@ try:
 except ImportError:
     st.warning("正在安装 pygwalker...")
     st.spinner("安装中...")
-    !pip install pygwalker -q
+    
     import pygwalker as pyg
 
 # 检查是否已安装 pandas，如果没有则安装
